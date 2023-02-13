@@ -1,0 +1,214 @@
+:root{
+  --matte: #414141;
+  --fresh: #CCDFCB;
+  --watermelon: #FF6A5C;
+  --Teal: #056571;
+  --white: #fff;
+	--paper: #f2f2f2;
+  --black: #000000;
+  --roboto: 'Roboto', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --menuHover: #000000;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+		height:100%;
+}
+
+button{
+	font-family: var(--montserrat);
+	text-decoration: none;
+	background-color: var(--watermelon);
+	color: var(--white);
+	border:none;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.logout{
+	float:right;
+}
+
+.editButton{
+	margin-right: 20px;
+	float:right;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@font-face {
+  font-family: nerdfont;
+  src: url(./nerdfont.otf);
+}
+
+@font-face {
+  font-family: one;
+  src: url(./GreatVibes-Regular.ttf);
+}
+
+@font-face {
+  font-family: two;
+  src: url(./Cookie-Regular.ttf);
+}
+
+@font-face {
+  font-family: three;
+  src: url(./Merienda-Regular.ttf);
+}
+.icon{
+	font-family: nerdfont !important;
+	-webkit-appearance: none;
+}
+
+.link{
+  position: relative;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.link:hover{
+  color: var(--watermelon);
+  transition: width .3s ease;
+  -webkit-transition: width .3s ease;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: var(--watermelon);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: var(--watermelon);
+}
+footer{
+	position: absolute;
+	bottom:0;
+	background-color: var(--watermelon);
+	width: 100%;
+	height: 30px;
+}
+
+footer p{
+	margin:4px;
+	color: var(--white);
+}
+
+.head h1{
+	margin: 0;
+	padding: 20px 0;
+	font-weight: bold;
+	text-align:center;
+}
+
+.input{
+	text-align:center;
+}
+
+.list{
+	padding: 30px;
+	text-align:center;
+}
+
+.input div{
+	margin: 20px;
+}
+
+#qoute{
+	height:40px;
+	width: 200px;
+	text-decoration: none;
+	border: 2px solid var(--watermelon);
+	font-family: var(--roboto);
+	font-size: 0.8em;
+}
+
+#naam{
+	text-decoration: none;
+	border: 2px solid var(--watermelon);
+	font-family: var(--roboto);
+	font-size: 0.8em;
+}
+
+select{
+	border:2px solid var(--watermelon);
+}
+
+#testType{
+	font-size: 1.5em;
+}
+#qoutes{
+	display:inline;
+}
+
+#qouteRow{
+	width:150px;
+}
+
+#nameRow{
+	width:100px;
+}
+
+#removeRow{
+	width: 20px;
+}
+
+#maakLinked{
+	text-align:center;
+}
+
+.makeList{
+	text-align:center;
+}
+
+.tegelOverview{
+	text-align: center;
+}
+
+#tegelView{
+	display: inline;
+}
+
+#tegelView td{
+	width: 10vw;
+}
+#tegelView td img{
+	max-width:100%;
+}
+
+.bodycontainer{
+	min-height:100vh;
+	position:relative;
+}
+
+.content{
+	padding-bottom: 30px;
+}

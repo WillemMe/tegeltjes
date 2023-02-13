@@ -1,0 +1,22 @@
+version: "3.9"
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+ node:
+  build: .
+  restart: always
+  networks:
+   - app-tier
+  user: "node"
+  working_dir: /home/node/app
+  environment:
+   - Node_ENV=production
+  volumes:
+   - ./:/home/node/app
+  ports:
+   - "3131:3000"
+  command: "npm start"
+ 

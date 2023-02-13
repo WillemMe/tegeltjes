@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<script src="jquery.min.js"></script>
+		<title>Willems tegelfabriek</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="bodycontainer">
+			<div class="content">
+				<div class="head">
+					<h1>Willems tegeltjes fabriek  <span class="icon"></span></h1>
+				</div>
+				<div class="input">
+					<div id="text">
+						<div>
+						<label for="qoute">Quote:</label>
+						<textarea name="qoute" id="qoute" placeholder="Ik wil lid worden!"></textarea>
+						</div>
+						<div>
+							<label for="naam">Naam:</label>
+							<input name="naam" id="naam" placeholder="J. Boskoop">
+						</div>
+					</div>
+					<div id="select">
+						<label for="tegel">Tegel decoratie:</label>
+						<select name="tegel" id="tegel">
+							<option value="1">Tegel 1</option>
+							<option value="2">Tegel 2</option>
+							<option value="3">Tegel 3</option>
+							<option value="4">Tegel 4</option>
+							<option value="5">Tegel 5</option>
+							<option value="6">Tegel 6</option>
+							<option value="7">Tegel 7</option>
+							<option value="8">Tegel 8</option>
+						</select>
+						<label for="kleur">Kleur:</label>
+						<select name="kleur" id="kleur">
+							<option value="blauw">Blauw</option>
+							<option value="zwart">Zwart</option>
+							<option value="geel">Oker geel</option>
+						</select>
+					</div>
+					<div class="select">
+						<label for="font">Lettertype:</label>
+						<select id="font" name="font">
+							<option value="one">Great Vibes</option>
+							<option value="two">Cookie</option>
+							<option value="three">Merienda</option>
+						</select>
+						<p id="testType" style="font-family:one">Een qoute in dit lettertype</p>
+					</div>
+					<div id="buttons">
+						<button id="maak">Maak direct</button>
+						of
+						<button id="toevoegen">Toevoegen aan lijst</button>
+					</div>
+				</div>
+				<div class="list">
+					<table id="qoutes">
+						<td id="qouteRow">Quote</td><td id="nameRow">Naam</td><td id="removeRow">verwijder</td>
+					</table>
+				</div>
+				<div class="makeList">
+					<button id="maakLinked">Lijst Maken</button>
+				</div>
+				<div class="tegelOverview">
+					<table id="tegelView">
+						<tr>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+							<th>6</th>
+							<th>7</th>
+							<th>8</th>
+						</tr>
+						<tr>
+							<td><img src="tegelTemplate/blauw/1.jpg"</td>
+							<td><img src="tegelTemplate/blauw/2.jpg"</td>
+							<td><img src="tegelTemplate/blauw/3.jpg"</td>
+							<td><img src="tegelTemplate/blauw/4.jpg"</td>
+							<td><img src="tegelTemplate/blauw/5.jpg"</td>
+							<td><img src="tegelTemplate/blauw/6.jpg"</td>
+							<td><img src="tegelTemplate/blauw/7.jpg"</td>
+							<td><img src="tegelTemplate/blauw/8.jpg"</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<footer>
+				<div class="disclaimer">
+					<p class="left">Copyright 2021 Willem Medendorp</p><p class="right"> made with <span class="icon">﯈</span> and <span class="icon"></span></p>
+			</div>
+			</footer>
+		</div>
+	</body>
+</html>
