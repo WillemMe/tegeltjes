@@ -15,8 +15,7 @@ services:
   environment:
    - Node_ENV=production
   volumes:
-   - ./:/home/node/app
+   - ./public:/home/node/app/public
   ports:
    - "3131:3000"
   command: "npm start"
- 
